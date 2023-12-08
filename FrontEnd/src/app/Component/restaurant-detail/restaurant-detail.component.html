@@ -1,0 +1,11 @@
+<p>Detail du Restaurant</p>
+
+<div *ngIf="restaurant">
+    {{restaurant.id}}
+    {{restaurant.nom}}
+    {{restaurant.adresse}}
+    {{restaurant.note}}
+    <img src={{restaurant.coverUrl}} width="300" />
+</div>
+
+<app-form-evaluation></app-form-evaluation>

@@ -1,0 +1,10 @@
+<p>Ajouter une évaluation</p>
+<form #theform="ngForm" (ngSubmit)="addLivre(theform)">
+    <input type="hidden" [(ngModel)]="restaurant_id" name="restaurant_id"/>
+    <input type="text" [(ngModel)]="nom" name="titre"/>
+    <input type="text" [(ngModel)]="texte" name="texte"/>
+    <input type="text" [(ngModel)]="note" name="note"/>
+    <input type="text" [(ngModel)]="date_creation" name="date_création"/>
+    <input type="text" [(ngModel)]="date_MAJ" name="date_MAJ"/>
+    <button type="submit">Valider</button>
+</form>
