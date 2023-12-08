@@ -1,0 +1,6 @@
+<p>Liste Des Restaurants : </p>
+
+<div *ngFor="let i of listeRestaurants" appColorRestaurant="{{i.note}}">
+    <a href="/restaurant/{{i.id}}">{{i.nom}}</a>
+    <img src={{i.coverUrl}} width="300" />
+</div>
